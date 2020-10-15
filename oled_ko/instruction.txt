@@ -1,0 +1,4 @@
+
+insmod oled-ssd1306.ko
+echo oled 0x3c > /sys/bus/i2c/devices/i2c-1/new_device  //generate i2c_client
+echo bg3mdo > /sys/bus/i2c/devices/i2c-1/1-003c/oled_attr
